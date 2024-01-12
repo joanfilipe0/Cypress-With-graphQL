@@ -1,0 +1,6 @@
+{
+  "testFixtures" : "query { countries { name,code,capital } }",
+  "codeQuery": "query { country(code: \"US\") { name capital } }",
+  "languagesQuery": "query { countries { name languages { name } } }",
+  "countryQuery": "query { countries(filter:{name:{eq:\"Brazil\"}}){name,capital}}"
+}
